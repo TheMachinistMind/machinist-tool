@@ -1,0 +1,89 @@
+#modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+#login-box {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#Login, #Register {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#Login input, #Register input {
+  padding: 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: "Geist Mono", monospace;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#Login button, #Register button {
+  padding: 12px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: "Geist Mono", monospace;
+  align-self: center;
+  width: 60%;
+}
+
+#Login p, #Register p {
+  text-align: center;
+  font-size: 13px;
+  color: gray;
+  cursor: pointer;
+}
+
+#Login p:hover, #Register p:hover {
+  color: black;
+}
+
+.passwords-wrapper {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.passwords-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.show-btn {
+  width: auto !important;
+  padding: 8px 14px !important;
+  font-size: 12px !important;
+  background: #f0f0f0 !important;
+  color: gray !important;
+  border: 1px solid #e0e0e0 !important;
+  align-self: stretch;
+  border-radius: 8px !important;
+}
+
+.error {
+  color: red !important;
+  font-size: 13px;
+  text-align: center;
+}

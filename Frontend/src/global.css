@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Geist Mono", monospace;
+}
+
+body {
+  background-color: #f9f8f6;
+}
+
+button, textarea, input {
+  font-family: "Geist Mono", monospace;
+}
+a, button, p[onClick] {
+  cursor: pointer;
+}
