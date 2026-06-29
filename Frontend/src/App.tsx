@@ -4,8 +4,9 @@ import Navbar from './components/navbar/navbar'
 import ChatWindow from './features/chat/chatwindow'
 import Logo from './components/logo/logo'
 import './App.css'
-import Levelselect from './features/level/levelselect'
+import Levelselect from './features/level/communitychat'
 import Footer from './components/footer/footer'
+import CommunityChat from './features/level/communitychat'
 
 function App() {
   const [modalOPEN, setModalOpen] = useState(false)
@@ -20,7 +21,7 @@ function App() {
         </div>
         <div id="right">
           <Navbar onAccountClick={() => setModalOpen(true)} />
-          <Levelselect />
+          <CommunityChat />
         </div>
       </div>
       <Footer />

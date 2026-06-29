@@ -1,13 +1,14 @@
 # The Machinist Mind
 
-AI-powered personalized learning platform with structured difficulty levels (D1–D5).
+Real-time multiplayer quiz platform. Compete, learn, grow.
 
 ## Project Structure
+
 MACHINIST TOOL/
 
-├── frontend/    # React + TypeScript (Vite) (in progress)
+├── Frontend/    # React + TypeScript (Vite)
 
-├── backend/     # Rust + Axum (in progress)
+├── Backend/     # Rust + Axum
 
 └── docs/        # Architecture, API docs
 
@@ -20,11 +21,23 @@ MACHINIST TOOL/
 - Realtime: WebSocket
 - Deploy: Docker
 
+## What it does
+
+- Real-time multiplayer quiz — compete live with others
+- Topics: CS, engineering, science, logic, systems thinking
+- Leaderboard, achievements, community
+- AI explains what you didn't know — in context, at your level
+- Saved questions become your personal learning path
+
 ## Status
 
 Work in progress — building in public.
 
-Follow the journey on X and Substack. 
+Follow the journey:
+- X: @TheMachinistMind
+- Substack: TheMachinistMind
 
-Bence Gaál
-The Machinist Mind 
+---
+
+*Built by Bence Gaál*
+*Proof that you can build serious things without a degree.*
