@@ -3,18 +3,6 @@
   flex-direction: column;
   gap: 12px;
 }
-
-#chat-header {
-  padding: 15px;
-  background: white;
-  border: 1px solid #e0e0e0;
-  border-radius: 12px;
-}
-
-#chat-header strong {
-  font-size: 14px;
-}
-
 #chat-messages {
   display: flex;
   flex-direction: column;
@@ -23,8 +11,8 @@
   background: white;
   border: 1px solid #e0e0e0;
   border-radius: 12px;
-  min-height: 600px;
-  max-height: 600px;
+  min-height: 660px;
+  max-height: 660px;
   overflow-y: auto;
 }
 

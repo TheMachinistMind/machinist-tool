@@ -21,9 +21,6 @@ function CommunityChat() {
 
   return (
     <div id="community-chat">
-      <div id="chat-header">
-        <strong>Community Chat</strong>
-      </div>
       <div id="chat-messages">
         {messages.map((msg, i) => (
           <div key={i} className="chat-message">
