@@ -38,7 +38,7 @@ function ChatWindow(): JSX.Element {
     <div id="input-area">
       <textarea 
         id="input" 
-        placeholder="What do you want to learn?"
+        placeholder="Ready To Start   Yes/No (select)?"
         value={input}
         onChange={(e) => setInput(e.target.value)}
         onKeyDown={(e) => {

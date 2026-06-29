@@ -3,16 +3,17 @@
   flex-direction: column;
   gap: 12px;
 }
+
 #chat-messages {
   display: flex;
   flex-direction: column;
   gap: 10px;
   padding: 15px;
-  background: white;
-  border: 1px solid #e0e0e0;
+  background: #282C34;
+  border: 1px solid #3E4451;
   border-radius: 12px;
-  min-height: 660px;
-  max-height: 660px;
+  min-height: 690px;
+  max-height: 690px;
   overflow-y: auto;
 }
 
@@ -25,25 +26,25 @@
 .chat-user {
   font-size: 12px;
   font-weight: bold;
-  color: black;
+  color: #E5C07B;
 }
 
 .chat-text {
   font-size: 13px;
-  color: gray;
+  color: #ABB2BF;
 }
 
 .chat-time {
   font-size: 11px;
-  color: #bbb;
+  color: #5C6370;
 }
 
 #chat-input-row {
   display: flex;
   gap: 8px;
   padding: 15px;
-  background: white;
-  border: 1px solid #e0e0e0;
+  background: #282C34;
+  border: 1px solid #3E4451;
   border-radius: 12px;
 }
 
@@ -51,25 +52,30 @@
   flex: 1;
   padding: 8px 12px;
   font-size: 13px;
-  border: 1px solid #e0e0e0;
+  background: #1E2128;
+  color: #ABB2BF;
+  border: 1px solid #3E4451;
   border-radius: 8px;
   outline: none;
+  font-family: "Geist Mono", monospace;
 }
 
 #chat-input-row input:focus {
-  border-color: black;
+  border-color: #E5C07B;
 }
 
 #chat-input-row button {
   padding: 8px 16px;
   font-size: 13px;
-  background: white;
-  border: 1px solid #e0e0e0;
+  background: #282C34;
+  color: #ABB2BF;
+  border: 1px solid #3E4451;
   border-radius: 8px;
   cursor: pointer;
+  font-family: "Geist Mono", monospace;
 }
 
 #chat-input-row button:hover {
-  background: #FCFFD4;
-  border-color: black;
+  background: #3E4451;
+  border-color: #E5C07B;
 }

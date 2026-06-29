@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react'
 import type { JSX } from 'react'
-import './Dropdown.css'
+import './dropdown.css'
 
 interface DropdownProps {
   label: string
-  items: { label: string; href: string }[]
+  items: { label: string; href?: string }[]
 }
 
 function Dropdown({ label, items }: DropdownProps): JSX.Element {
@@ -26,7 +26,9 @@ function Dropdown({ label, items }: DropdownProps): JSX.Element {
       {open && (
         <div className="dropdown-menu">
           {items.map((item, i) => (
-            <a key={i} href={item.href}>{item.label}</a>
+            <a key={i} onClick={(e) => e.stopPropagation()}>
+              {item.label}
+            </a>
           ))}
         </div>
       )}

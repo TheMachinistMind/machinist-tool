@@ -1,6 +1,6 @@
 import type { JSX } from 'react'
 import './navbar.css'
-import Dropdown from '../Dropdown/Dropdown'
+import Dropdown from '../dropdown/dropdown'
 
 function Navbar({ onAccountClick }: { onAccountClick: () => void }): JSX.Element {
   return (
@@ -8,8 +8,8 @@ function Navbar({ onAccountClick }: { onAccountClick: () => void }): JSX.Element
       <Dropdown 
         label="Playmode"
         items={[
-          { label: 'Solo', href: '#' },
-          { label: 'Ranked', href: '#' }
+          { label: 'Python', href: '#' },
+          { label: 'JavaScript', href: '#' }
         ]}
       />
       <a href="#">Community</a>

@@ -1,12 +1,15 @@
 .dropdown {
   position: relative;
+  display: flex;
+  align-items: center;
 }
+
 .dropdown-menu {
   position: absolute;
   top: 30px;
   left: 0;
-  background: white;
-  border: 1px solid #e0e0e0;
+  background: #282C34;
+  border: 1px solid #3E4451;
   border-radius: 8px;
   padding: 8px;
   display: flex;
@@ -15,16 +18,20 @@
   z-index: 100;
 }
 
-.dropdown-menu a {
+.dropdown-menu a,
+.dropdown-menu a:link,
+.dropdown-menu a:visited,
+.dropdown-menu a:active {
   padding: 6px 12px;
   border-radius: 6px;
+  color: #ABB2BF;
+  text-decoration: none;
+  background: none;
+  outline: none;
+  display: block;
 }
 
 .dropdown-menu a:hover {
-  background: #f5e642;
-}
-.dropdown {
-  position: relative;
-  display: flex;
-  align-items: center;
+  background: #3E4451;
+  color: #E5C07B;
 }

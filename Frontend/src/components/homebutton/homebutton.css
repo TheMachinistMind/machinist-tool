@@ -1,0 +1,16 @@
+#home-btn {
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+#home-btn:hover {
+  opacity: 1;
+}
+#home-btn {
+  position: absolute;
+  left: 20px;
+}
