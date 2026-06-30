@@ -17,15 +17,15 @@ function Login({ onClose }: { onClose: () => void }): JSX.Element {
         {nezet === 'login' ? (
           <form onSubmit={(e) => { e.preventDefault() }}>
             <div id="Login">
-              <input 
-                type="email" 
+              <input
+                type="email"
                 placeholder="E-mail"
                 onChange={(e) => setEmail(e.target.value)}
               />
               <div className="passwords-wrapper">
                 <div className="passwords-inputs">
-                  <input 
-                    type={showPassword ? 'text' : 'password'} 
+                  <input
+                    type={showPassword ? 'text' : 'password'}
                     placeholder="Password"
                     onChange={(e) => setPassword(e.target.value)}
                   />
@@ -40,34 +40,45 @@ function Login({ onClose }: { onClose: () => void }): JSX.Element {
             </div>
           </form>
         ) : (
-          <form onSubmit={(e) => {
+          <form onSubmit={async (e) => {
             e.preventDefault()
             if (password !== confirmPassword) {
               setError('Passwords do not match!')
               return
             }
             setError('')
+            const response = await fetch('http://localhost:3000/register', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ name, email, password })
+            })
+            const data = await response.json()
+            if (response.ok) {
+              onClose()
+            } else {
+              setError(data.message)
+            }
           }}>
             <div id="Register">
-              <input 
-                type="text" 
+              <input
+                type="text"
                 placeholder="Name"
                 onChange={(e) => setName(e.target.value)}
               />
-              <input 
-                type="email" 
+              <input
+                type="email"
                 placeholder="E-mail"
                 onChange={(e) => setEmail(e.target.value)}
               />
               <div className="passwords-wrapper">
                 <div className="passwords-inputs">
-                  <input 
-                    type={showPassword ? 'text' : 'password'} 
+                  <input
+                    type={showPassword ? 'text' : 'password'}
                     placeholder="Password"
                     onChange={(e) => setPassword(e.target.value)}
                   />
-                  <input 
-                    type={showPassword ? 'text' : 'password'} 
+                  <input
+                    type={showPassword ? 'text' : 'password'}
                     placeholder="Confirm Password"
                     onChange={(e) => setConfirmPassword(e.target.value)}
                   />
