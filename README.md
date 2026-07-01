@@ -1,6 +1,6 @@
 # The Machinist Mind
 
-Real-time multiplayer quiz platform. Compete, learn, grow.
+Real-time multiplayer platform. Compete, learn, grow.
 
 ## Project Structure
 
@@ -23,7 +23,7 @@ MACHINIST TOOL/
 
 ## What it does
 
-- Real-time multiplayer quiz — compete live with others
+- Real-time multiplayer — compete live with others
 - Topics: CS, engineering, science, logic, systems thinking
 - Leaderboard, achievements, community
 - AI explains what you didn't know — in context, at your level
